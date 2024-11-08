@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin: auto;
+    color: rgb(5, 5, 58);
+    font-size: medium;
+    padding: 18px;
+}
+
+.classe-fundo {
+    background-color: rgb(73, 110, 131);
+    text-align: center;
+
+}
+
+.classe-fundo2 {
+    background-color: rgb(101, 101, 165);
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.classe-fundo3 {
+    background-color: rgb(127, 224, 29);
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+}
+
+p {
+    margin: 5px;
+    font-size: large;
+    text-align: left;
+
+}
+
+a {
+    color: aqua;
+    margin: 50px;
+    display: block;
+}
+
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-column: 10px;
+    gap: 10px;
+
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 10px;
+    background-color: rgb(108, 179, 37);
+    text-align: left;
+    background-color: rgb(132, 224, 39);
+    text-align: center;
+    border-radius: 0 0 20px 20px ;
+}
+
+
+.sidebar {
+
+    height: 1000vh;
+    width: 160px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(41, 80, 2, 0.411);
+    color: white;
+    padding-top: 20px;
+
+}
+
+.sidebar h1 {
+    text-align: center;
+    font-size: medium;
+}
+
+.sideber ul li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.sidebar ul a {
+
+    color: white;
+    text-decoration: none;
+    display: block;
+
+}
+
+.sidebar ul li a:hover {
+    background-color: #635e5e;
+}
+
+toggleMenu{
+    margin: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.menu{
+    width:200px;
+    background-color: #333;
+    color:#fff;
+    padding:20px;
+    position:fixed;
+    top: 0;
+    left: -220px; /*esconder o menu*/
+    height: 100%;
+    transition: left 0.3s ease; /*animação para suavisar o movimento.*/
+
+}
+
+.menu ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.conteudo {
+    padding: 15px;
+    margin-left: 160px;
+    margin-right: 5px;
+}
+
+.resumo {
+    display: none;
+}
+
+.texto_completo {
+    display: block;
+}
+
+footer{
+    width: 100%;
+    background-color: aqua;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+}
+
+
+button{
+    padding: 10px 20px;
+    background-color: #5b8f29;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+
+}
+
+button:hover{
+    background-color: #476d1d;
+    padding-left: 50px;
+
+}
+
+.texto_completo .resumo{
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 8px;
+}
+
+.projetos {
+    background-color: #cfc8c8;
+    padding: 150px;
+    margin-top: 20px;
+    border-radius: 10px
+
+}
+
+.projetos ul {
+    list-style-type: none;
+}
+
+.projetos ul li {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #ddd;
+    border-radius: 4px;
+
+}
+
+.projetos:hover{
+    margin-left: 50px;
+}
+
+
+/* Responsividade: Oculta o menu em telas menores */
+@media (max-width: 600px) {
+    .container-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 5%;
+
+    }
+
+    h1 {
+        text-align: center;
+        color: rgb(5, 5, 58);
+        font-size: large;
+        padding: 18px;
+        margin: 10%;
+    }
+
+    a {
+        color: aqua;
+        margin: 50px;
+        display: block;
+        padding: 10px;
+        display: block;
+    }
+
+    p {
+        text-align: center;
+        font-size: large;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 5%;
+    }
+
+    .sidebar {
+        width: 100px;
+        display: none;
+    }
+
+    .conteudo {
+        margin-left: auto;
+
+    }
+
+    .resumo {
+        display: block;
+        border-radius: 20px;
+    }
+
+    .texto_completo {
+        display: none;
+        border-radius: 20px;
+    }
+
+    .projetos {
+        background-color: #f0f0f0;
+        padding: 15px;
+        margin-top: 20px;
+        border-radius: 10px
+    
+    }
+    
+    .projetos ul {
+        list-style-type: none;
+    }
+
+    .item{
+        border-radius: 10px;
+    }
+}
