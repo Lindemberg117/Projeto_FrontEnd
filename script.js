@@ -115,7 +115,7 @@ document.getElementById('form-contato').addEventListener('submit', (event) => {
 })
 
 //Menu escondido
-
+/*
 const toggleMenu = document.getElementById('toggleMenu');
 const menuLateral = document.getElementById('menuLateral');
 
@@ -128,3 +128,15 @@ toggleButton.addEventListener('click', () => {
         toggleButton.innerText = 'Esconder Menu'
     }
 })
+*/
+
+const menuLateral = document.getElementById('menuLateral');
+const toggleButton = document.getElementById('toggleMenu');
+
+toggleButton.addEventListener('click', () => {
+    if (menuLateral.style.left === '-220px') {
+        menuLateral.style.left = '0';
+    } else {
+        menuLateral.style.left = '-220px';
+    }
+});
