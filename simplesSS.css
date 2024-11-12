@@ -42,11 +42,24 @@ a {
 
 .container{
     display: flex;
-    justify-content:space-around;
-    align-items: center;
-    height: 300px;
+    height: 200px;
     background-color: #f3f3f3;
-    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.item1{
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    flex-grow: 3;  /* Controla o crescimento dos itens */
+    flex-shrink: 1; /* Controla o encolhimento dos itens */
+    flex-basis: 500px;  /* Define o tamanho base do item */
+    justify-content: center;
+    align-items: center;
 }
 
 .container-grid {
