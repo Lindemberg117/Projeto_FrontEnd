@@ -140,3 +140,28 @@ toggleButton.addEventListener('click', () => {
         menuLateral.style.left = '-220px';
     }
 });
+
+//mudar cor de fundo em parágrafo
+
+document.getElementById('mudarCor').addEventListener('click', () => {
+    const texto = document.getElementById('texto')
+    texto.style.backgroundColor = texto.style.backgroundColor === 'yellow' ? 'white' : 'yellow';
+});
+
+
+
+//Alterar o conteúdo de um parágrafo com base na tecla pressionada
+
+document.addEventListener('keydown', (evento)=>{
+    const mensagem =  document.getElementById('mensagem');
+
+    if(evento.key === 'a'){
+        mensagem.innerText = 'Você pressionou A'
+    }
+    else if (evento.key === 'b'){
+        mensagem.innerText = 'Você pressionou B'
+    }
+    else{
+        mensagem.innerText = 'Pressione A ou B'
+    }
+})

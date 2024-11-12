@@ -233,6 +233,11 @@ button:hover{
     margin-left: 50px;
 }
 
+#texto{
+    padding: 10px;
+    transition: background-color 0.5s ease; /* A transição suave */
+}
+
 
 /* Responsividade: Oculta o menu em telas menores */
 @media (max-width: 600px) {
