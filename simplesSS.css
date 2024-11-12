@@ -42,6 +42,11 @@ a {
 
 .container{
     display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 300px;
+    background-color: #f3f3f3;
+    margin: 10px;
 }
 
 .container-grid {
