@@ -155,13 +155,11 @@ document.getElementById('mudarCor').addEventListener('click', () => {
 document.addEventListener('keydown', (evento)=>{
     const mensagem =  document.getElementById('mensagem');
 
-    if(evento.key === 'a'){
-        mensagem.innerText = 'Você pressionou A'
-    }
-    else if (evento.key === 'b'){
-        mensagem.innerText = 'Você pressionou B'
-    }
-    else{
-        mensagem.innerText = 'Pressione A ou B'
+    if (evento.key === 'a' || evento.key === 'A') {
+        mensagem.innerText = 'Você pressionou A!';
+    } else if (evento.key === 'b' || evento.key === 'B') {
+        mensagem.innerText = 'Você pressionou B!';
+    } else {
+        mensagem.innerText = 'Pressione A ou B.';
     }
 })

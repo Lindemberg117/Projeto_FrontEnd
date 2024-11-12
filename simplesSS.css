@@ -40,6 +40,9 @@ a {
     display: block;
 }
 
+.container{
+    display: flex;
+}
 
 .container-grid {
     display: grid;
